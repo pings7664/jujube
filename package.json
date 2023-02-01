@@ -1,0 +1,32 @@
+{
+  "name": "jujube",
+  "version": "0.0.0",
+  "description": "个人博客",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "engines": {
+    "node": ">=14.0.0",
+    "pnpm": ">=7.0.0"
+  },
+  "packageManager": "pnpm@7.22.0",
+  "keywords": [
+    "typescript",
+    "turborepo"
+  ],
+  "homepage": "https://github.com/gnipgnos/jujube#readme",
+  "bugs": {
+    "url": "https://github.com/gnipgnos/jujube/issues",
+    "email": "4739837@gmail.com"
+  },
+  "author": "ping.song <4739837@gmail.com> (https://github.com/gnipgnos)",
+  "license": "Apache-2.0 license"
+}
