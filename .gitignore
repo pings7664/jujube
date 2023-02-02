@@ -10,3 +10,9 @@
 
 # dependencies
 node_modules
+
+# compiled output
+.cache
+
+# gatsby
+gatsby-types.d.ts
