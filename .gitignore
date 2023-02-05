@@ -16,3 +16,7 @@ node_modules
 
 # gatsby
 gatsby-types.d.ts
+apps/gatsby/public
+
+# nuxt
+.nuxt
