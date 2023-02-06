@@ -2,6 +2,16 @@
 import * as path from 'path'
 
 export default defineNuxtConfig({
+  app: {
+    baseURL: '/nuxt',
+  },
+  appConfig: {
+    title: 'Jujube',
+    description: '一切都会变好，超好，爆好，无敌好！',
+  },
+  devServer: {
+    port: 6666,
+  },
   srcDir: 'src/',
   css: ['~/assets/css/main.css'],
   postcss: {
