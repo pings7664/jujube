@@ -19,6 +19,5 @@ export default defineNuxtConfig({
         base: path.resolve(__dirname, '../../shared/content'),
       },
     },
-
   },
 })
