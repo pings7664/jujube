@@ -13,10 +13,3 @@ node_modules
 
 # compiled output
 .cache
-
-# gatsby
-gatsby-types.d.ts
-apps/gatsby/public
-
-# nuxt
-.nuxt
