@@ -1,36 +1,20 @@
 {
   "name": "jujube",
-  "version": "0.0.0",
-  "description": "个人博客",
   "private": true,
-  "workspaces": [
-    "apps/*",
-    "packages/*"
-  ],
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev --parallel",
-    "lint": "turbo run lint"
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
   },
   "devDependencies": {
-    "@types/node": "latest",
-    "turbo": "latest",
-    "typescript": "latest"
-  },
-  "engines": {
-    "node": ">=18.0.0",
-    "pnpm": ">=8.0.0"
-  },
-  "packageManager": "pnpm@8.3.1",
-  "keywords": [
-    "typescript",
-    "turborepo"
-  ],
-  "homepage": "https://github.com/gnipgnos/jujube#readme",
-  "bugs": {
-    "url": "https://github.com/gnipgnos/jujube/issues",
-    "email": "4739837@gmail.com"
-  },
-  "author": "ping.song <4739837@gmail.com> (https://github.com/gnipgnos)",
-  "license": "Apache-2.0 license"
+    "@vitejs/plugin-vue": "^4.1.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.0",
+    "vue-tsc": "^1.2.0"
+  }
 }
