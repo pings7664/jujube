@@ -1,31 +1,19 @@
 {
   "name": "jujube",
   "type": "module",
-  "version": "0.0.0",
-  "private": true,
+  "version": "0.0.1",
+  "private": false,
   "scripts": {
-    "dev": "vite",
-    "build": "vue-tsc && vite build",
-    "preview": "vite preview",
-    "lint": "eslint ."
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "nprogress": "^0.2.0",
-    "vue": "^3.2.47",
-    "vue-router": "^4.1.6"
-  },
-  "devDependencies": {
-    "@antfu/eslint-config": "^0.38.5",
-    "@types/nprogress": "^0.2.0",
-    "@vitejs/plugin-vue": "^4.1.0",
-    "eslint": "^8.39.0",
-    "sass": "^1.62.0",
-    "typescript": "^5.0.2",
-    "unplugin-auto-import": "^0.15.3",
-    "unplugin-vue-components": "^0.24.1",
-    "vite": "^4.3.0",
-    "vite-plugin-pages": "^0.29.0",
-    "vite-plugin-vue-layouts": "^0.8.0",
-    "vue-tsc": "^1.2.0"
+    "@astrojs/mdx": "^1.1.0",
+    "@astrojs/rss": "^3.0.0",
+    "@astrojs/sitemap": "^3.0.0",
+    "astro": "^3.2.0"
   }
 }
