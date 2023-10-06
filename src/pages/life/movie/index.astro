@@ -1,0 +1,26 @@
+---
+import Layout from '~/layouts/default.astro'
+
+const url = 'https://api.themoviedb.org/4/list/8221960'
+const options = {
+  method: 'GET',
+  params: {
+    language: 'zh',
+  },
+  headers: {
+    accept: 'application/json',
+    Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiYWQ4NjA3YjRjYTY0OTQyNDFjMWEzZGZlMzA2OWU2NiIsInN1YiI6IjYyOTJlNDJiZmQ2MzAwMDA2NjM5NDUxNSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.jDOenCDLmMphaCWAlTzNUsFAI7Lng_J3ajzHdTN9GW8',
+  },
+}
+
+
+const movies = await fetch(url, options).then(res =>
+  res.json(),
+)
+
+console.log(movies.results)
+---
+
+<Layout>
+  {movies}
+</Layout>
