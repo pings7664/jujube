@@ -1,5 +1,6 @@
 {
   "name": "jujube",
+  "description": "一个属于自己的小博客",
   "private": true,
   "type": "module",
   "scripts": {
@@ -11,7 +12,12 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
+    "@types/node": "^20.8.3",
+    "@unocss/nuxt": "^0.56.5",
+    "daisyui": "^3.9.2",
     "nuxt": "^3.7.4",
+    "unocss": "^0.56.5",
+    "unocss-preset-daisy": "^6.0.1",
     "vue": "^3.3.4",
     "vue-router": "^4.2.5"
   },
