@@ -1,6 +1,6 @@
 {
   "name": "jujube",
-  "description": "一个属于自己的小博客",
+  "version": "0.0.1",
   "private": true,
   "type": "module",
   "scripts": {
@@ -12,13 +12,8 @@
   },
   "devDependencies": {
     "@nuxt/devtools": "latest",
-    "@types/node": "^20.8.3",
-    "@unocss/nuxt": "^0.56.5",
-    "daisyui": "^3.9.2",
-    "nuxt": "^3.7.4",
-    "unocss": "^0.56.5",
-    "unocss-preset-daisy": "^6.0.1",
-    "vue": "^3.3.4",
+    "nuxt": "^3.8.1",
+    "vue": "^3.3.8",
     "vue-router": "^4.2.5"
   },
   "engines": {
@@ -43,8 +38,5 @@
     "type": "git",
     "url": "https://github.com/gnipgnos/jujube.git"
   },
-  "license": "Apache-2.0",
-  "dependencies": {
-    "@nuxt/content": "^2.8.5"
-  }
+  "license": "Apache-2.0"
 }
