@@ -4,9 +4,17 @@ export default defineNuxtConfig({
     enabled: true,
 
     timeline: {
-      enabled: true
-    }
+      enabled: true,
+    },
   },
 
-  modules: ["@nuxt/content"]
+  modules: [
+    '@nuxt/content',
+    '@nuxtjs/tailwindcss',
+    'shadcn-nuxt',
+  ],
+  shadcn: {
+    prefix: '',
+    componentDir: './components/ui',
+  },
 })
