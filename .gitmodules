@@ -1,0 +1,3 @@
+[submodule "content"]
+	path = content
+	url = git@github.com:pings7664/blog.git

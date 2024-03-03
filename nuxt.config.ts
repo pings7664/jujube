@@ -6,5 +6,7 @@ export default defineNuxtConfig({
     timeline: {
       enabled: true
     }
-  }
+  },
+
+  modules: ["@nuxt/content"]
 })
