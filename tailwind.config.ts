@@ -8,7 +8,7 @@ export default {
     './pages/**/*.vue',
     './components/**/*.{ts,tsx,vue}',
     './app.vue',
-    './error.vue'
+    './error.vue',
   ],
   theme: {
     container: {
