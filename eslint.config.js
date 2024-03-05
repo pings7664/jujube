@@ -5,7 +5,9 @@ const compat = new FlatCompat()
 
 export default antfu({
   vue: true,
-  typescript: true,
+  typescript: {
+    tsconfigPath: './tsconfig.json',
+  },
 }, {
   files: ['**/*.vue'],
   rules: {

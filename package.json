@@ -2,6 +2,11 @@
   "name": "nuxt-app",
   "type": "module",
   "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0",
+    "bun": ">=1.0.0"
+  },
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
@@ -28,7 +33,15 @@
     "@nuxtjs/tailwindcss": "^6.11.4",
     "eslint": "^8.57.0",
     "eslint-plugin-tailwindcss": "^3.14.3",
+    "lint-staged": "^15.2.2",
     "shadcn-nuxt": "latest",
+    "simple-git-hooks": "^2.10.0",
     "typescript": "^5.3.3"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "bun lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
   }
 }
