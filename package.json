@@ -1,49 +1,17 @@
 {
-  "name": "jujube",
-  "type": "module",
-  "version": "0.1.0",
+  "name": "nuxt-app",
   "private": true,
-  "description": "个人博客",
-  "license": "MIT",
-  "engines": {
-    "node": ">=20.0.0",
-    "bun": ">=1.0.0"
-  },
+  "type": "module",
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare",
-    "lint": "eslint . --fix"
+    "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@radix-icons/vue": "^1.0.0",
-    "class-variance-authority": "^0.7.0",
-    "clsx": "^2.1.0",
     "nuxt": "^3.10.3",
-    "radix-vue": "^1.4.9",
-    "tailwind-merge": "^2.2.1",
-    "tailwindcss-animate": "^1.0.7",
-    "vue": "^3.4.19",
+    "vue": "^3.4.21",
     "vue-router": "^4.3.0"
-  },
-  "devDependencies": {
-    "@antfu/eslint-config": "^2.8.0",
-    "@eslint/eslintrc": "^3.0.2",
-    "@nuxt/content": "latest",
-    "@nuxtjs/tailwindcss": "^6.11.4",
-    "eslint": "^8.57.0",
-    "eslint-plugin-tailwindcss": "^3.14.3",
-    "lint-staged": "^15.2.2",
-    "shadcn-nuxt": "latest",
-    "simple-git-hooks": "^2.10.0",
-    "typescript": "^5.3.3"
-  },
-  "simple-git-hooks": {
-    "pre-commit": "bun lint-staged"
-  },
-  "lint-staged": {
-    "*": "eslint --fix"
   }
 }
