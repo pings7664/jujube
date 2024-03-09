@@ -18,5 +18,6 @@
     "@nuxt/content": "latest",
     "@nuxthq/studio": "latest"
   },
+  "packageManager": "bun@1.0.30",
   "license": "MIT"
 }
