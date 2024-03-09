@@ -17,5 +17,6 @@
   "devDependencies": {
     "@nuxt/content": "latest",
     "@nuxthq/studio": "latest"
-  }
+  },
+  "license": "MIT"
 }
