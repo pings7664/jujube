@@ -15,6 +15,7 @@
     "vue-router": "^4.3.0"
   },
   "devDependencies": {
-    "@nuxt/content": "latest"
+    "@nuxt/content": "latest",
+    "@nuxthq/studio": "latest"
   }
 }
