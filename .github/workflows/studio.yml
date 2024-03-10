@@ -40,7 +40,7 @@ jobs:
         id: pkgman
         run: |
           cache=`[ -f "./pnpm-lock.yaml" ] && echo "pnpm" || ([ -f "./package-lock.json" ] && echo "npm" || ([ -f "
-          ./yarn.lock" ] && echo "yarn" || cache=`[ -f "./bun.lockb" ] && echo "bun" || echo ""))`
+          ./yarn.lock" ] && echo "yarn" || ([ -f "./bun.lockb" ] && echo "bun" || echo "")))`
           package_manager=`[ ! -z "$cache" ] && echo "$cache" || echo "pnpm"`
           echo "cache=$cache" >> $GITHUB_OUTPUT
           echo "package_manager=$package_manager" >> $GITHUB_OUTPUT
