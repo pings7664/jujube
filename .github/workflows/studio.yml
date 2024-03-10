@@ -52,7 +52,7 @@ jobs:
         with:
           version: 8
 
-      - uses: bun/action-step@v1.0.0
+      - uses: oven-sh/setup-bun@v1
         if: ${{ steps.pkgman.outputs.package_manager == 'bun' }}
         name: Install Bun
         id: bun-install
