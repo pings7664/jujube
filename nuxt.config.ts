@@ -1,9 +1,18 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: true },
-  modules: ['@nuxt/content', '@nuxthq/studio', '@nuxtjs/tailwindcss', 'shadcn-nuxt'],
+  modules: [
+    '@nuxt/content',
+    '@nuxthq/studio',
+    '@nuxtjs/tailwindcss',
+    'shadcn-nuxt',
+    '@nuxtjs/color-mode',
+  ],
   shadcn: {
     prefix: '',
-    componentDir: './components/ui'
-  }
+    componentDir: './components/ui',
+  },
+  colorMode: {
+    classSuffix: '',
+  },
 })

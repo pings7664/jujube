@@ -25,8 +25,11 @@
   },
   "devDependencies": {
     "@antfu/eslint-config": "^2.8.0",
+    "@iconify-json/radix-icons": "^1.1.14",
+    "@iconify/vue": "^4.1.1",
     "@nuxt/content": "latest",
     "@nuxthq/studio": "latest",
+    "@nuxtjs/color-mode": "^3.3.2",
     "@nuxtjs/tailwindcss": "^6.11.4",
     "eslint": "^8.57.0",
     "shadcn-nuxt": "^0.10.2",
