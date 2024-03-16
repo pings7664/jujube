@@ -23,5 +23,9 @@
     "@nuxthq/studio": "latest",
     "eslint": "^8.57.0",
     "typescript": "5.3.3"
+  },
+  "engines": {
+    "node": ">=21.0.0",
+    "pnpm": ">=8.0.0"
   }
 }
