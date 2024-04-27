@@ -1,8 +1,18 @@
 import antfu from '@antfu/eslint-config'
+import { FlatCompat } from '@eslint/eslintrc'
+
+const compat = new FlatCompat()
 
 export default antfu({
   vue: true,
-  typescript: true,
+  typescript: {
+    tsconfigPath: 'tsconfig.json',
+  },
+  formatters: {
+    css: true,
+    html: true,
+    markdown: 'prettier',
+  },
 }, {
   files: ['**/*.vue'],
   rules: {
@@ -15,4 +25,8 @@ export default antfu({
       },
     }],
   },
-})
+}, ...compat.config({
+  extends: [
+    'plugin:tailwindcss/recommended',
+  ],
+}))
