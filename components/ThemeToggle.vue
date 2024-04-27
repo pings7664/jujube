@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import { Icon } from '@iconify/vue'
-import { Button } from '@/components/ui/button'
 
 const colorMode = useColorMode()
 
@@ -11,15 +10,15 @@ function toggleColorMode() {
 
 <template>
   <Button
-    class="w-9 h-9"
+    class="size-9"
     aria-label="Toggle dark mode"
     variant="ghost"
     size="icon"
     @click="toggleColorMode"
   >
     <Icon
-      :icon="colorMode.preference === 'dark' ? 'radix-icons:sun' : 'radix-icons:moon'"
-      class="w-5 h-5 text-foreground"
+      :icon="colorMode.preference === 'dark' ? 'lucide:sun' : 'lucide:moon'"
+      class="size-5"
     />
   </Button>
 </template>
