@@ -1,5 +1,5 @@
 ---
-title: [Typescript] Exclude 工具类型
+title: 【Typescript】Exclude 工具类型
 ---
 
 `Exclude` 是 typescript 中内置的工具类型,它用于从一个联合类型中排除掉不希望包含的类型,生成一个新的类型.
@@ -32,7 +32,7 @@ uid = false // Error
 ```typescript
 type Status = "success" | "error" | 200 | 500;
 
-type StringStatus = Exclude<Status, number>; 
+type StringStatus = Exclude<Status, number>;
 // type StringStatus = "success" | "error"
 
 type NumberStatus = Exclude<Status, string>

@@ -1,5 +1,5 @@
 ---
-title: [Typescript] Extract 工具类型
+title: 【Typescript】Extract 工具类型
 ---
 
 Extract 是 Typescript 中内置的工具类型，用于从类型中提取出指定的属性,生成一个新的类型。这类工具类型在日常开发中非常有用,能够帮助编写类型安全的代码和更好的实现代码复用.
@@ -111,8 +111,8 @@ function isDog(pet: Pet): pet is Extract<Pet, { type: 'dog' }> {
 
 const pet1: Pet = { type: 'dog', bark: () => console.log('Woof!') }
 const pet2: Pet = { type: "cat", meow: () => console.log("Meow!") }
-console.log(`pet1 is dog: ${isDog(pet1)}`) // "pet1 is dog: true" 
-console.log(`pet2 is dog: ${isDog(pet2)}`) // "pet2 is dog: false" 
+console.log(`pet1 is dog: ${isDog(pet1)}`) // "pet1 is dog: true"
+console.log(`pet2 is dog: ${isDog(pet2)}`) // "pet2 is dog: false"
 ```
 
 ## 在函数重载中使用 Extract
