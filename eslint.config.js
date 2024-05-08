@@ -25,6 +25,11 @@ export default antfu({
       },
     }],
   },
+}, {
+  files: ['**/*.ts'],
+  rules: {
+    '@typescript-eslint/no-floating-promises': 'off',
+  },
 }, ...compat.config({
   extends: [
     'plugin:tailwindcss/recommended',

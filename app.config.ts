@@ -1,6 +1,5 @@
 export default defineAppConfig({
-  title: 'Jujube',
-  logo: '',
+  title: 'Seventy',
   description: '一切都会变好! 超好! 爆好! 无敌好! ',
   author: 'Song Ping',
   nav: [
@@ -10,39 +9,50 @@ export default defineAppConfig({
       icon: 'lucide:home',
     },
     {
-      text: '博客',
+      text: '内容',
       link: '/posts',
-      icon: 'lucide:folder',
+      icon: 'lucide:terminal',
+      items: [
+        { text: '编程', link: '/coding', icon: 'lucide:code-xml' },
+        { text: '项目', link: '/projects', icon: 'lucide:rocket' },
+      ],
+    },
+    {
+      text: '手记',
+      link: '/blog',
+      icon: 'lucide:pen-line',
     },
     {
       text: '生活',
+      link: '/life',
       icon: 'lucide:shell',
       items: [
-        {
-          text: '电影',
-          link: '/life/movies',
-          icon: 'lucide:film',
-        },
-        {
-          text: '音乐',
-          link: '/life/music',
-          icon: 'lucide:music-2',
-        },
-        {
-          text: '书籍',
-          link: '/life/books',
-          icon: 'lucide:library-big',
-        },
-        {
-          text: '游戏',
-          link: '/life/games',
-          icon: 'lucide:swords',
-        },
-        {
-          text: '菜单',
-          link: '/life/recipe',
-          icon: 'lucide:utensils-crossed',
-        },
+        { text: '电影', link: '/movies', icon: 'lucide:film' },
+        { text: '音乐', link: '/music', icon: 'lucide:music-2' },
+        { text: '书籍', link: '/books', icon: 'lucide:library-big' },
+        { text: '游戏', link: '/games', icon: 'lucide:swords' },
+        { text: '食谱', link: '/recipe', icon: 'lucide:utensils-crossed' },
+      ],
+    },
+    {
+      text: '工作',
+      link: '/work',
+      icon: 'lucide:briefcase',
+      items: [
+        { text: '面试', link: '/interviews', icon: 'lucide:speech' },
+        { text: '语言', link: '/languages', icon: 'lucide:languages' },
+        { text: '链接', link: '/links', icon: 'lucide:link' },
+      ],
+    },
+    {
+      text: '更多',
+      link: '/others',
+      icon: 'lucide:more-horizontal',
+      items: [
+        { text: '摘抄', link: '/search', icon: 'lucide:notebook' },
+        { text: '归档', link: '/archives', icon: 'lucide:archive' },
+        { text: '标签', link: '/tags', icon: 'lucide:tag' },
+        { text: 'RSS', link: '/rss.xml', icon: 'lucide:rss' },
       ],
     },
     {
