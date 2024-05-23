@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import LottiesAvatar from '~/assets/lotties/avatar.json'
+import LottieAvatar from '~/assets/lotties/avatar.json'
 
 interface AvatarProps {
   height: number
@@ -12,7 +12,7 @@ defineProps<AvatarProps>()
 <template>
   <client-only>
     <Lottie
-      :animation-data="LottiesAvatar"
+      :animation-data="LottieAvatar"
       :height="height"
       :width="width"
     />
