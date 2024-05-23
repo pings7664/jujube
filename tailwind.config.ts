@@ -3,6 +3,7 @@ import animate from 'tailwindcss-animate'
 
 export default {
   darkMode: ['class'],
+  safelist: ['dark'],
   content: [
     'components/**/*.{ts,tsx,vue}',
     'pages/**/*.vue',

@@ -6,18 +6,29 @@ export default defineNuxtConfig({
       pathPrefix: false,
     },
   ],
-  devtools: { enabled: true },
-  runtimeConfig: {
-    tmdb: {
-      apiKey: '',
-      accessToken: '',
-    },
+  content: {
+    ignores: [
+      '.gitignore',
+      'LICENSE',
+      'README.md',
+    ],
   },
+  devtools: { enabled: true },
   modules: [
     '@nuxt/content',
-    '@nuxthq/studio',
+    '@nuxt/image',
+    '@nuxt/eslint',
+    '@nuxt/fonts',
+    'nuxt-radash',
     '@nuxtjs/tailwindcss',
-    '@nuxtjs/color-mode',
     '@vueuse/nuxt',
+    '@nuxtjs/color-mode',
+    'nuxt-icon',
+    "shadcn-nuxt"
   ],
+  ssr: false,
+  shadcn: {
+    prefix: '',
+    componentDir: './components/ui'
+  }
 })
